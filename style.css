@@ -1,0 +1,158 @@
+/* Preimpostazione */
+*{
+    font-family: 'Montserrat' , sans-serif;
+    font-size: 21px;
+    color: white;
+    font-weight: 500;
+}
+
+body{
+    background: url(/Img/background.jpg);
+    background-size: cover;
+    background-position: top;
+
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+}
+
+button{
+    color: #000000;
+    font-size: 14px;
+    padding: 3px 6px;
+}
+ul{
+    list-style: none;
+    padding: 0;
+    margin: 5px;
+}
+li{
+    margin: 20px 0 0 0;
+}
+p{
+    margin: 5px 0 0 0;
+}
+
+
+
+
+
+
+/* containers */
+.lim__container{
+    background-color: rgba(0,0,0,0.5);
+    border-radius: 20px;
+    width: 80%;
+    max-width: 800px;
+    min-height: 550px;
+    padding: 40px 20px;
+}
+
+.logo__container{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.subtitle__container{
+    text-align: center;
+}
+
+.options__container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 221, 0, 0.7);
+    border-radius: 4px;
+}
+
+
+
+/* Lists */
+.options__list{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    padding: 0;
+    flex-wrap: wrap;
+}
+.options__list li{
+    margin: 0;
+}
+
+@media screen and (max-width: 470px) {
+    .options__container{
+        justify-content: flex-start;
+    }
+
+    .options__list{
+        justify-content: left;
+        align-items: flex-start;
+        flex-direction: column;
+    } 
+    
+}
+
+
+
+
+/* Texts */
+.subtitle__container h1{
+    font-size: 1.4em;
+    font-weight: 600;
+    color: #00DD00;
+}
+
+.mono__name{
+    font-size: 1.2em;
+    font-weight: 600;
+}
+
+.sub__description{
+    font-size: 0.8em;
+    font-weight: 400;
+}
+
+
+
+
+
+
+/* Images & icons */
+#logo__img{
+    width: 50%;
+    max-width: 200px;
+}
+
+.fa-arrow-right{
+    font-size: 14px;
+}
+
+
+
+/* battery levels */
+.battery__level{
+    height: 30px;
+    border-radius: 6px;
+    width: 100%;
+    background-color: #00DD00;
+}
+
+.level__80{
+    width: 80%;
+    background-color: #00DD00;
+}
+
+.level__50{
+    width: 50%;
+    background-color: #F5B453;
+}
+
+.level__20{
+    width: 20%;
+    background-color: #BE4141;
+}
